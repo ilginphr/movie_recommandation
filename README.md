@@ -1,29 +1,41 @@
-# 🎬 Movie Recommender System
+# 🎬 Movie Recommendation System
 
-A simple **content-based movie recommendation system** that suggests similar films based on genres. Built using Python, pandas, and scikit-learn.
+This is a simple **content-based movie recommender system** built with Python and deployed using **Streamlit**.  
+It suggests similar movies based on **genre similarity** using `CountVectorizer` and `cosine similarity`.
 
-## 📌 Project Overview
+---
 
-This project takes a movie title as input and recommends similar movies based on their genre similarity. It uses **CountVectorizer** and **cosine similarity** to calculate how close each movie is to the selected one.
+## 📌 Features
 
-## 📁 Dataset
+- Takes a movie title from user input
+- Recommends similar movies based on shared genres
+- Built with pandas, scikit-learn, and Streamlit
+- Easy-to-use web interface
 
-The dataset (`movies.csv`) contains movie titles and their genres. Example:
+---
 
-| Title            | Genres                  |
-|------------------|--------------------------|
-| The Matrix       | Action\|Sci-Fi           |
-| Inception        | Action\|Sci-Fi\|Thriller |
-| Titanic          | Romance\|Drama           |
+## 🚀 How It Works
 
-## ⚙️ How It Works
+1. **Preprocessing genres** using `CountVectorizer`
+2. **Computing similarity** between movies with `cosine_similarity`
+3. User inputs a movie title
+4. Top N similar movies are returned based on genre similarity
 
-1. Reads the dataset using pandas.
-2. Encodes genres using `CountVectorizer`.
-3. Calculates similarity using `cosine_similarity`.
-4. Recommends top N most similar movies.
+---
 
-## ▶️ How to Run
+## 🛠️ Technologies Used
+
+- Python 🐍
+- pandas
+- scikit-learn
+- Streamlit
+- Git & GitHub
+
+---
+
+## 🖥️ Demo
+
+You can run the app locally using:
 
 ```bash
-python recommender.py
+streamlit run app.py
