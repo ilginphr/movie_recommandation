@@ -16,8 +16,6 @@ The dataset (`movies.csv`) contains movie titles and their genres. Example:
 | Inception        | Action\|Sci-Fi\|Thriller |
 | Titanic          | Romance\|Drama           |
 
-> You can expand the dataset with more movies and genres later.
-
 ## ⚙️ How It Works
 
 1. Reads the dataset using pandas.
