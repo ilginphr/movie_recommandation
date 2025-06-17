@@ -1,4 +1,5 @@
 # 🎬 Movie Recommendation System
+https://movierecommandation-nxzcxvddhj8ktzuyatw8vu.streamlit.app/
 
 This is a simple **content-based movie recommender system** built with Python and deployed using **Streamlit**.  
 It suggests similar movies based on **genre similarity** using `CountVectorizer` and `cosine similarity`.
